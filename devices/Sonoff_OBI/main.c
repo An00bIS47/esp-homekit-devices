@@ -59,33 +59,26 @@
 /* ############################################################################################## */
 #define USE_OBI_SOCKET      1
 
-#ifdef USE_OBI_SOCKET
 
-    #define LED_GPIO            4   // LED          -> Org: 13
-    #define BUTTON1_GPIO        14  // PUSH Button  -> Org: 0
-    #define RELAY1_GPIO         12  // RELAY ON     -> ADDED
-    #define RELAY2_GPIO         5   // RELAY OFF    -> unchanged
 
-#else
+#define LED_GPIO            4   // LED          -> Org: 13
+#define SWITCH_GPIO         14
+#define SENSOR_GPIO         14
+#define DOOR_OPENED_GPIO    5
+#define DOOR_CLOSED_GPIO    14
 
-    #define LED_GPIO            4   // LED          -> Org: 13
-    #define SWITCH_GPIO         14
-    #define SENSOR_GPIO         14
-    #define DOOR_OPENED_GPIO    5
-    #define DOOR_CLOSED_GPIO    14
+#define BUTTON1_GPIO        14  // PUSH Button  -> Org: 0
+#define BUTTON2_GPIO        9
+#define BUTTON3_GPIO        10
+#define BUTTON4_GPIO        14
 
-    #define BUTTON1_GPIO        14  // PUSH Button  -> Org: 0
-    #define BUTTON2_GPIO        9
-    #define BUTTON3_GPIO        10
-    #define BUTTON4_GPIO        14
+#define RELAY1_GPIO         12  // RELAY ON     -> ADDED
+#define RELAY2_GPIO         5   // RELAY OFF    -> unchanged
 
-    #define RELAY1_GPIO         12  // RELAY ON     -> ADDED
-    #define RELAY2_GPIO         5   // RELAY OFF    -> unchanged
+#define RELAY3_GPIO         4
+#define RELAY4_GPIO         15
 
-    #define RELAY3_GPIO         4
-    #define RELAY4_GPIO         15
 
-#endif
 /* ############################################################################################## */
 
 
